@@ -9,7 +9,7 @@ $(document).ready(function() {
                 dataType: "jsonp",
                 data: { get_param: 'value' },
                 cache: false,
-                url: "http://content.guardianapis.com/search?show-blocks=body&api-key=test",
+                url: "https://content.guardianapis.com/search?show-blocks=body&api-key=test",
                     success: function (data) {
 
                     for (var i = 0; i < data.response.results.length; i++) {

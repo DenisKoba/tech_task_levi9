@@ -1,0 +1,75 @@
+body {
+  font-family: ".Helvetica Neue DeskInterface", sans-serif;
+  color: gray; }
+
+.app-heading {
+  display: block;
+  margin: auto; }
+
+.app-body__wrapper {
+  display: block;
+  width: 1000px;
+  padding: 50px;
+  border: 1px solid #f2f2f2;
+  margin: 50px auto; }
+  .app-body__wrapper_heading {
+    cursor: pointer;
+    transition: .5s;
+    margin: 50px 0 10px 0; }
+    .app-body__wrapper_heading:hover {
+      color: #12538e;
+      transition: .5s; }
+    .app-body__wrapper_heading .cross {
+      width: 30px;
+      height: 30px;
+      background-image: url(https://cdn0.iconfinder.com/data/icons/feather/96/circle-cross-512.png);
+      background-size: cover;
+      transform: rotate(45deg);
+      transition: .5s ease-out;
+      position: relative;
+      display: inline-block;
+      float: right;
+      opacity: .4; }
+
+button {
+  display: block;
+  margin: auto;
+  width: 157px;
+  height: 43px;
+  border: 2px solid #97b9d3;
+  background: rgba(146, 175, 255, 0);
+  font-size: 18px;
+  color: #535353;
+  cursor: pointer;
+  outline: none;
+  transition: .5s; }
+  button:hover {
+    background-color: #12538e;
+    transition: .5s;
+    color: #fff;
+    border: #12538e; }
+
+.description {
+  display: block;
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 20px;
+  padding: 40px;
+  margin: 0 0 40px 0;
+  border-left: 1px solid #8c8c8c; }
+
+.more {
+  color: #808080;
+  text-decoration: none;
+  border-bottom: 5px solid #97b9d3;
+  transition: .5s; }
+  .more:hover {
+    border-bottom: 5px solid #12538e;
+    transition: .5s; }
+
+.cross-active {
+  transform: rotate(0deg) !important;
+  transition: .5s;
+  opacity: .4; }
+
+/*# sourceMappingURL=styles.css.map */

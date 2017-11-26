@@ -153,3 +153,11 @@ body {
 
 .next-button {
   right: 30px; }
+
+.total-pages-number {
+  font-family: "Helvetica Neue DeskInterface", sans-serif;
+  font-weight: 900;
+  color: #97b9d3;
+  font-size: 25px;
+  padding: 0 0 0 10px;
+  line-height: 89px; }

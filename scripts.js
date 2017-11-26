@@ -5,6 +5,7 @@ $(document).ready(function() {
     $prevPage = $('#prev');
     $display = $("#pageDisplay")
     $pageNumber = $display.val();
+    $pagesNumberScreen = $(".total-pages-number");
 
     if ($pageNumber === "1") {
         $prevPage.hide();
@@ -26,13 +27,14 @@ $(document).ready(function() {
                         var link = "<a class='more' target='_blank'>read more</a>";
                         $(news).append($(link).attr("href", data.response.results[i].webUrl));
                     }
-
+                        pagesNumber = data.response.pages;
                         $(".description").slideUp(10);
                         $("h1").click(function(e){
                             $(this).children().toggleClass("cross-active");
                             text = $(this).next(".description");
                             text.slideToggle();
                         });
+                    $pagesNumberScreen.text("/ " + pagesNumber);
                       
 
                 },
@@ -41,7 +43,10 @@ $(document).ready(function() {
                 }
             });
 
+
     }
+
+
 
     $("#app-reload").click(function () {
         $(news).fadeOut(50);
@@ -92,4 +97,6 @@ $(document).ready(function() {
         newsFeed();
         $(news).fadeIn(1000);
     })
+
+
 });

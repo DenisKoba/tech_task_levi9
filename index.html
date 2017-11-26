@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <title>The Guardian News</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Playball&amp;subset=latin-ext" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <img src="https://takemebackto.s3.amazonaws.com/media/blog/2017/10/16/b19-image.png" class="app-heading">
-    <button id="app-reload">Refresh</button>
+<header class="header">
+    <button class="refresh-button" id="app-reload">Refresh</button>
+    <div class="header__left-block"><img src="https://takemebackto.s3.amazonaws.com/media/blog/2017/10/16/b19-image.png" class="app-heading"></div>
+    <div class="header__right-block">
+        <div class="header__right-block_wrapper">
+            <span class="page-number-label">The current page</span>
+            <input class="page-display" type="text" id="pageDisplay" value="1">
+            <span class="total-pages-number"></span>
+        </div>
+    </div>
 </header>
 
 <section class="app-body">
@@ -17,6 +25,9 @@
 
     </div>
 </section>
+<div class="prev-button" id="prev">previous page</div>
+<div class="next-button" id="next">next page</div>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="scripts.js"></script>
